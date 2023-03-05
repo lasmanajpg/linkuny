@@ -1,0 +1,84 @@
+
+.header{
+  width: 100%;
+  background-color: #0FA865;
+}
+.header .logo{
+  margin: 30px 30px 30px 50px;
+  width: 300px;
+}
+.header .dekor{
+  float: right;
+  width: 235px;
+}
+
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: inline-block.run-inn ;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  margin-top: -3px;
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.button {
+  text-align: center;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #0FA865;
+  color: white;
+  font-size: 16px;
+   margin: 0px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover{
+  background-color: white; /* warna latar belakang tombol saat dihover */
+  color:#0FA865; /* warna teks tombol saat dihover */
+  border: 2.5px solid #0FA865; /* menambahkan border saat tombol dihover */
+}
+
+.button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 14px;
+    padding: 20px 30px;
+    border-radius: 16px;
+  }
+}
+
+
+/*footer {
+  position: absolute;
+  top: calc( 100vh + 300px );
+  width: 100%;
+  background-color: #0FA865;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}*/
